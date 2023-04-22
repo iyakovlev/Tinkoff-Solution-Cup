@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:theme="@style/SolutionTheme.Light"
+        tools:context="tinkoff.solutioncup.iyakovlev.FirstFragment">
+
+        <Button
+            android:id="@+id/toTheDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To the dark ➡"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <tnkoff.solutioncup.iyakovlev.design.notification.NotificationSmallView
+            android:id="@+id/notification_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:elevation="4dp"
+            app:closeButtonVisible="false"
+            app:description="Description"
+            app:icon="@drawable/tui_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toTheDark"
+            app:title="Title" />
+
+        <tnkoff.solutioncup.iyakovlev.design.notification.NotificationSmallView
+            android:id="@+id/notification_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:elevation="4dp"
+            app:closeButtonVisible="true"
+            app:description="Description"
+            app:icon="@drawable/tui_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notification_one"
+            app:title="Title" />
+
+        <tnkoff.solutioncup.iyakovlev.design.notification.NotificationLargeView
+            android:id="@+id/notification_large_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:buttonVisible="true"
+            app:butttonText="Button"
+            app:header="Header"
+            app:icon="@drawable/tui_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notification_two" />
+
+        <tnkoff.solutioncup.iyakovlev.design.notification.NotificationLargeView
+            android:id="@+id/notification_large_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:buttonVisible="false"
+            app:butttonText="Button"
+            app:header="Header"
+            app:icon="@drawable/tui_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notification_large_one"
+            app:subheader="Subheader" />
+
+        <tnkoff.solutioncup.iyakovlev.design.notification.CardCarouselView
+            android:id="@+id/card_one"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notification_large_two"
+            app:containerHeader="Header"
+            app:cornerButtonText="Button"
+            app:mainButtonText="Button"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="contentBackground" format="reference" />
+    <attr name="contentPaddingTop" format="reference|dimension" />
+    <attr name="contentPaddingStart" format="reference|dimension" />
+    <attr name="contentPaddingEnd" format="reference|dimension" />
+    <attr name="contentPaddingBottom" format="reference|dimension" />
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Notification">
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationSmallView" parent="Notification">
+        <attr name="title" format="string" />
+        <attr name="description" format="string" />
+        <attr name="icon" />
+        <attr name="closeButtonVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationLargeView" parent="Notification">
+        <attr name="header" format="string" />
+        <attr name="subheader" format="string" />
+        <attr name="icon" />
+        <attr name="buttonVisible" format="boolean" />
+        <attr name="butttonText" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CardCarouselView">
+        <attr name="containerHeader" format="string" />
+        <attr name="mainButtonVisible" format="boolean" />
+        <attr name="cornerButtonText" format="string" />
+        <attr name="mainButtonText" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SolutionTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="contentPaddingTop">16dp</item>
+        <item name="contentPaddingStart">20dp</item>
+        <item name="contentPaddingEnd">20dp</item>
+        <item name="contentPaddingBottom">20dp</item>
+        <item name="contentBackground">@drawable/rect_white_corners_big</item>
+        <item name="android:buttonStyle">@style/ButtonStyle.Regular</item>
+    </style>
+
+    <style name="SolutionTheme.Light">
+        <item name="contentBackground">@drawable/rect_white_corners_big</item>
+        <item name="android:buttonStyle">@style/ButtonStyle.Regular</item>
+    </style>
+
+    <style name="SolutionTheme.Dark">
+        <item name="contentBackground">@drawable/rect_light_gray_corners_big</item>
+        <item name="android:buttonStyle">@style/ButtonStyle.Highlighted</item>
+    </style>
+
+</resources>
